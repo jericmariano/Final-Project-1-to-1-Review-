@@ -192,7 +192,7 @@ header {
     letter-spacing: 0.1em;
 }
 
-.features__subtitle {
+.section__subtitle {
     font-size: 48px;
     font-weight: 900;
     letter-spacing: 0.025em;
@@ -200,7 +200,7 @@ header {
     margin: 32px 0;
 }
 
-.features__para {
+.section__para {
     color: #7C8BA1;
     font-size: 18px;
     font-weight: 500;
@@ -250,4 +250,39 @@ header {
     font-weight: 500;
 }
 
+/* QUALITY */
 
+.quality__row {
+    display: flex;
+}
+
+.quality__description {
+    width: 50%;
+}
+
+#quality .section__para {
+    text-align: left;
+}
+
+.quality__img--container {
+    width: 50%;
+    border: 1px solid rgba(124, 139, 161, 0.2);
+    border-radius: 4px;
+    display: flex;
+    overflow: hidden;
+}
+
+.quality__img {
+    width: 100%;
+}
+
+.section__btn {
+    margin-top: 32px;
+    background-color: rgb(100 21 255);
+    border: none;
+    padding: 12px 32px;
+    border-radius: 50px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
