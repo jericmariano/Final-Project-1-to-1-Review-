@@ -286,3 +286,28 @@ header {
     font-size: 14px;
     font-weight: 700;
 }
+
+/* STEPS */
+
+.steps__row {
+    display: flex;
+    margin-top: 144px;
+}
+
+.steps__description {
+    width: 50%;
+}
+
+.steps__img--container {
+    width: 50%;
+}
+
+.steps__img {
+    width: 100%;
+}
+
+.steps__wrapper {
+    display: flex;
+}
+
+/* style steps, duplicate,  */
