@@ -15,6 +15,7 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 24px;
 }
 
 ul {
@@ -70,7 +71,7 @@ nav {
     transition: color 300ms ease;
 }
 
-.logo__text:hover {
+nav .logo__text:hover {
     color: rgb(100, 21, 255);
 }
 
@@ -575,3 +576,98 @@ footer {
 .fab:hover {
     opacity: 0.8;
 }
+
+@media (max-width: 1024px) {
+    .nav__links {
+        display: none;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .header__title {
+        font-size: 30px;
+    }
+
+    .header__para {
+        font-size: 16px;
+    }
+
+    .header__left {
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .header__input--container {
+        max-width: none;
+    }
+
+    .header__input--button {
+        margin-right: 80px;
+    }
+
+    #features .section__para {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    .services {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .service {
+        width: 50%;
+    }
+
+    .section__subtitle {
+        font-size: 36px;
+    }
+
+    .section__para {
+        font-size: 16px;
+    }
+
+    .quality__description {
+        margin-right: 20px;
+    }
+
+    .quality__img {
+        height: fit-content;
+    }
+
+    #pricing .section__subtitle {
+        font-size: 48px;
+    }
+
+    .plans__container {
+        flex-direction: column;
+    }
+
+    .plan {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .plan:nth-child(2) {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+}
+
+/* start burger menu */
+
+/* 
+
+things to do:
+- finish other responsive layouts
+- resuable code fix 
+
+
+*/
