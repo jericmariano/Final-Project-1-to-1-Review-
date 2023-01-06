@@ -290,10 +290,6 @@ header {
 /* STEPS */
 
 
-#steps {
-    padding: 80px 0;
-}
-
 .steps__row {
     display: flex;
     align-items: center;
@@ -350,4 +346,116 @@ header {
 }
 
 
-/* style steps, duplicate,  */
+/* PRICING */
+
+.pricing__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plans__container {
+    width: 100%;
+    margin-top: 64px;
+    display: flex;
+}
+
+.plan {
+    width: calc(100% / 3);
+    border: 1px solid rgb(226, 232, 240);
+    position: relative;
+    margin: 0 16px;
+}
+
+.plan--blue {
+    background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+    color: white;
+}
+
+.plan--blue .plan__feature, .plan--blue .plan__length {
+    color: white;
+}
+
+.plan__line {
+    position: absolute;
+    height: 0.5rem;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+
+.plan__line--red {
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+.plan { 
+    border-radius: 8px;
+}
+
+.plan__header,
+.plan__body,
+.plan__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0;
+}
+
+.plan__header,
+.plan__body {
+    border-bottom: 2px solid rgb(226, 232, 240);
+}
+
+.plan__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding-top: 16px;
+
+}
+
+.plan__price {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.plan__length {
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: rgb(160, 174, 192);
+}
+
+.plan__feature--main {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+}
+
+.plan__feature {
+    font-weight: 500;
+    margin-top: 1.25rem;
+    color: rgb(113, 128, 150);
+    margin-top: 1.25rem;
+}
+
+.plan__btn {
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    border-radius: 9999px;
+    border: none;
+    color: white;
+    padding: 16px 64px;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.plan__btn--red {
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+.plan__btn--blue {
+    background: white;
+    color: rgb(100 21 255);
+}
