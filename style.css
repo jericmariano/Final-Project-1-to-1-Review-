@@ -459,3 +459,63 @@ header {
     background: white;
     color: rgb(100 21 255);
 }
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(100 21 255);
+    padding: 90px 0;
+}
+
+.footer__title {
+    font-weight: 700;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.footer__links {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 64px;
+    border-bottom: 2px solid rgb(116 44 255);
+}
+
+.footer__link {
+    color: white;
+    text-decoration: none;
+    margin: 12px 0;
+}
+
+.footer__main,
+.footer__product,
+.footer__press,
+.footer__team,
+.footer__legal {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 48px;
+}
+
+.logo__text--footer {
+    color: white;
+}
+
+.footer__copyright--para {
+    color: #CBD5E0;
+}
+
+.fab {
+    background-color: white;
+    padding: 12px;
+    border-radius: 9999px;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 12px;
+}
