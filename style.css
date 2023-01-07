@@ -582,6 +582,11 @@ footer {
         display: none;
     }
 
+    .row__header {
+        padding-top: 0px;
+        
+    }
+
     header {
         flex-direction: column;
     }
@@ -608,6 +613,23 @@ footer {
 
     .header__input--button {
         margin-right: 80px;
+    }
+
+    .customers__container {
+        margin-top: 36px;
+    }
+
+    .customers__img {
+        padding-right: 0;
+    }
+
+    .header__right {
+        width: 50%;
+        margin-top: 36px;
+    }
+
+    .container__features {
+        padding-top: 0;
     }
 
     #features .section__para {
