@@ -118,6 +118,7 @@ nav .logo__text:hover {
     text-align: center;
     width: 32px;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .menu__backdrop {
@@ -135,6 +136,14 @@ nav .logo__text:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+.menu--open .menu__backdrop {
+    visibility: visible;
+    opacity: 1;
 }
 
 .backdrop__link {
@@ -166,8 +175,8 @@ nav .logo__text:hover {
 
 .fa-times {
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 10px;
+    top: 34px;
     padding: 8px;
     font-size: 20px;
     transition: color 300ms ease
