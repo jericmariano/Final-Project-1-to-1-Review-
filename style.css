@@ -119,6 +119,7 @@ nav .logo__text:hover {
     width: 32px;
     font-size: 20px;
     cursor: pointer;
+    transition: all 300ms ease;
 }
 
 .menu__backdrop {
@@ -182,7 +183,8 @@ nav .logo__text:hover {
     transition: color 300ms ease
 }
 
-.fa-times:hover {
+.fa-times:hover,
+.fa-bars:hover {
     color: rgb(100, 21, 255);
     cursor: pointer;
 }
@@ -608,11 +610,7 @@ footer {
     border-color: white;
 }
 
-.footer__main,
-.footer__product,
-.footer__press,
-.footer__team,
-.footer__legal {
+.footer__column {
     display: flex;
     flex-direction: column;
 }
@@ -732,8 +730,9 @@ footer {
         margin-right: 20px;
     }
 
-    .quality__img {
-        height: fit-content;
+    .quality__img--container {
+        height: 50%;
+        margin: auto 0; 
     }
 
     #pricing .section__subtitle {
@@ -757,13 +756,112 @@ footer {
 
 }
 
-/* start burger menu */
+@media (max-width: 768px) {
+    .header__right {
+        width: 70%;
+    }
 
-/* 
+    .section__subtitle {
+        font-size: 48px;
+    }
 
-things to do:
-- finish other responsive layouts
-- resuable code fix 
+    .services {
+        max-width: 400px;
+    }
 
+    .service {
+        width: 100%;
+    }
 
-*/
+    .quality__row {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .quality__img--container {
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 32px;
+    }
+
+    .quality__description {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    #quality .section__subtitle {
+        font-size: 36px;
+    }
+
+    #quality .section__para {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .steps__row {
+        flex-direction: column;
+    }
+
+    .steps__img--container {
+        width: 65%;
+        margin-bottom: 64px;
+    }
+
+    .steps__description {
+        text-align: center;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #steps .section__subtitle {
+        font-size: 36px;
+    }
+
+    .step {
+        flex-direction: column;
+    }
+
+    .step__description {
+        margin-left: 0;
+    }
+
+    .step__title {
+        margin: 12px 0;
+    }
+
+    .step__para {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    #pricing .section__subtitle {
+        text-align: center;
+    }
+
+    .footer__links {
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer__column {
+        width: calc(100% / 3);
+        margin-bottom: 32px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer__link {
+        text-align: center;
+    }
+
+    .footer__copyright {
+        flex-direction: column;
+    }
+
+    .footer__copyright--para {
+        margin: 24px 0;
+    }
+
+}
