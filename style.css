@@ -120,7 +120,7 @@ nav .logo__text:hover {
     font-size: 20px;
     cursor: pointer;
     transition: all 300ms ease;
-    display: none;
+    display: none !important;  
 }
 
 .menu__backdrop {
@@ -671,11 +671,11 @@ footer {
 
 @media (max-width: 1076px) {
     .nav__links {
-        display: none;
+        display: none !important; 
     }
 
     .fa-bars {
-        display: block;
+        display: block !important;
     }
 
     .row__header {
@@ -705,6 +705,10 @@ footer {
 
     .header__input--container {
         max-width: none;
+    }
+
+    .header__input {
+        padding: 20px 192px 20px 32px;
     }
 
     .customers__container {
@@ -777,6 +781,11 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+    .header__input {
+        padding: 20px 192px 20px 32px;
+    }
+
     .header__right {
         width: 70%;
     }
